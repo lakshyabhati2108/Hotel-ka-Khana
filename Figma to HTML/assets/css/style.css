@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+}
+
+:root {
+    --primary: rgba(38, 153, 251, 1);
+    --secondary: rgba(10, 206, 254, 1);
+    --green: rgba(39, 174, 96, 1);
+    --white: rgba(255, 255, 255, 1);
+    --BG-color: rgba(247, 250, 255, 1);
+}
+
+.container-head {
+    max-width: 1170px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-head div:nth-child(1) {
+    padding: 10px 0px;
+}
+
+.head-btn {
+    margin-right: 10px;
+    gap: 10px;
+}
+
+.head-btn button:nth-child(1) {
+    padding: 10px 18px;
+    background-color: rgba(255, 255, 255, 1);
+    color: var(--green);
+    border: 1px solid var(--green);
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(16, 24, 40, 0.05);
+    font-size: 16px;
+    line-height: 24px;
+    margin-right: 10px;
+    transition: 1s ease;
+}
+
+.head-btn button:nth-child(2) {
+    padding: 10px 18px;
+    background: linear-gradient(270deg, var(--primary), var(--secondary));
+    color: var(--white);
+    border: 1px solid var(--secondary);
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(16, 24, 40, 0.05);
+    font-size: 16px;
+    line-height: 24px;
+    transition: 1s ease;
+}
+
+.head-btn button:nth-child(1):hover {
+    background: var(--green);
+    color: var(--white);
+}
+
+.head-btn button:nth-child(2):hover {
+    background: var(--white);
+    color: var(--primary);
+}
+
+.sec-1 {
+    max-width: 1170px;
+    display: flex;
+    margin: auto;
+}
+
+.sec-left {
+    width: 50%;
+    margin-top: 10px;
+}
+
+.sec-left h1 {
+    font-size: 52px;
+    line-height: 68px;
+    font-weight: 700;
+}
+
+.sec-left h1 span {
+    display: inline-block;
+    position: relative;
+    background: linear-gradient(270deg, var(--primary), var(--secondary));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.sec-left p {
+    font-size: 22px;
+    line-height: 35px;
+    margin-top: 15px;
+}
+
+.sec-left ul li {
+    margin-top: 15px;
+    font-size: 22px;
+    line-height: 33px;
+}
+
+.sec-left ul li img {
+    width: 18px;
+    height: 18px;
+}
+
+.btn {
+    margin: 20px 0px;
+}
+
+.btn button:nth-child(1) {
+    font-size: 20px;
+    line-height: 28px;
+    border-radius: 8px;
+    border: 1px solid var(--secondary);
+    background: linear-gradient(270deg, var(--primary), var(--secondary));
+    padding: 16px 48px;
+    color: var(--white);
+    box-shadow: 0px 0px 10px rgba(38, 153, 251, 0.38);
+    margin-right: 8px;
+    transition: 1s ease;
+}
+
+.btn button:nth-child(2) {
+    font-size: 18px;
+    line-height: 28px;
+    border-radius: 8px;
+    border: 1px solid rgba(208, 213, 221, 1);
+    background: var(--white);
+    padding: 16px 28px;
+    color: rgba(10, 33, 52, 1);
+    box-shadow: 0px 0px 10px rgba(16, 24, 40, 0.1);
+    transition: 1s ease;
+}
+
+.btn button:nth-child(1):hover {
+    background: var(--white);
+    color: var(--primary);
+}
+
+.btn button:nth-child(2):hover {
+    background: linear-gradient(270deg, var(--primary), var(--secondary));
+    color: var(--white);
+}
+
+.sec-right {
+    width: 50%;
+    margin-top: 10px;
+    text-align: center;
+    max-width: 410px;
+    margin: auto;
+}
+
+.sec-right form {
+    background: var(--white);
+    box-shadow: 0px 0px 10px rgba(16, 24, 40, 0.06);
+    padding: 40px;
+    border-radius: 8px;
+    gap: 24px;
+    display: block;
+}
+
+.sec-right form h2 {
+    font-size: 25px;
+    text-align: center;
+    padding-top: 25px;
+}
+
+.sec-right form div {
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+}
+
+.sec-right form div input {
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: 1px solid rgba(208, 213, 221, 1);
+    gap: 8px;
+}
+
+.sec-right form div label {
+    text-align: left;
+}
+
+.sec-right form button {
+    padding: 10px 18px;
+    gap: 8px;
+    border: 1px solid var(--secondary);
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(16, 24, 40, 0.05);
+    background: linear-gradient(270deg, var(--primary), var(--secondary));
+    color: var(--white);
+    margin-top: 30px;
+    width: 100%;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    transition: 1s ease;
+}
+
+.sec-right form button:hover {
+    background: var(--white);
+    color: var(--primary);
+}
+
+.sec-2 {
+    max-width: 1170px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 47, 88, 0.08);
+    margin: auto;
+}
+
+.container-count {
+    margin: 20px 0px;
+    padding: 30px;
+}
+
+.container-count ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-count ul li {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.container-count ul li span {
+    font-size: 30px;
+    line-height: 100%;
+    font-weight: 700;
+    color: var(--primary);
+}
+.sec-3{
+    background: var(--BG-color);
+    width: 100%;
+    margin-top: 50px;
+}
+.key-highlight{
+    margin: auto;
+    max-width: 1170px;
+    padding: 20px 0px;
+}
+.key-highlight h2{
+    font-size: 36px;
+    line-height: 100%;
+    font-weight: 700;
+    padding: 25px 0px;
+    gap: 20px;
+}
+.key-highlight p{
+    font-size: 18px;
+    line-height: 27px;
+}
+.key-cards{
+    max-width: 1170px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 25px 0px;
+}
+.cards{
+    flex-basis: 30%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    background-color: var(--white);
+    border-radius: 8px;
+    gap: 20px;
+    margin: 20px 0px;
+    box-shadow: 0px 0px 10px rgba(0, 47, 88, 0.08);
+}
+.cards div:nth-child(2) h3{
+    font-size: 20px;
+    line-height: 26px;
+}
+.cards div:nth-child(2) p{
+    font-size: 15px;
+    line-height: 22px;
+} 
+.key-highlight .btn1 button{
+    font-size: 20px;
+    line-height: 28px;
+    padding: 16px 48px;
+    gap: 8px;
+    border: 1px solid var(--secondary);
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(16, 24, 40, 0.05);
+    background: linear-gradient(270deg, var(--primary), var(--secondary));
+    color: var(--white);
+    text-align: center;
+    align-items: center;
+    margin: auto;
+}

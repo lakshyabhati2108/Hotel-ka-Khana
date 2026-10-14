@@ -1,0 +1,123 @@
+/* MOBILE SCREEN */
+@media only screen and (min-width:320px) and (max-width: 600px) {
+    .container-head {
+        margin: auto;
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .container-head div:nth-child(1) {
+        width: 100%;
+        text-align: center;
+        position: sticky;
+        top: 0px;
+        box-shadow: 0px 0px 10px #ccc;
+        background: var(--white);
+    }
+
+    .container-head div:nth-child(1) img {
+        width: 150px;
+        padding: 5px 0px;
+    }
+
+    .head-btn {
+        position: fixed;
+        bottom: 0px;
+        width: 100%;
+        box-shadow: 0px 0px 10px #ccc;
+        padding: 8px;
+        display: flex;
+        gap: 10px;
+    }
+
+    .head-btn button {
+        width: 50%;
+        gap: 10px;
+    }
+
+    .head-btn button:nth-child(1) {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    .head-btn button:nth-child(2) {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    .sec-1 {
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+
+    .sec-left {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .sec-left h1 {
+        font-size: 32px;
+        line-height: 40px;
+        text-align: center;
+    }
+
+    .sec-left p {
+        font-size: 18px;
+        text-align: center;
+        line-height: 24px;
+    }
+
+    .sec-left ul li {
+        font-size: 18px;
+    }
+
+    .sec-left ul li img {
+        width: 14px;
+        height: 14px;
+        margin-left: 10px;
+    }
+
+    .btn {
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+    .btn button:nth-child(1) {
+        font-size: 14px;
+        padding: 8px 18px;
+    }
+
+    .btn button:nth-child(2) {
+        font-size: 14px;
+        padding: 8px 18px;
+    }
+
+    .sec-right {
+        width: 80%;
+        margin: 20px;
+        text-align: center;
+        max-width: 410px;
+        margin: auto;
+    }
+
+    .sec-right form {
+        margin: 20px 0px;
+    }
+
+    .container-count ul {
+        flex-direction: column;
+    }
+
+    .container-count ul li {
+        width: 100%;
+        text-align: center;
+        margin: 10px 0px;
+        padding: 20px 0px;
+        line-height: 30px;
+        box-shadow: 0px 0px 10px #ccc;
+        border-radius: 8px;
+    }
+}
