@@ -6,23 +6,168 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipe Delight</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
 </head>
 
 <body class="bg-black">
     <header>
-        <div class="container-full mx-auto border border-b-1 border-white flex justify-center py-4">
+        <div class="container-full mx-auto border border-b border-white flex justify-center py-4">
             <img src="assets/img/ws.png" class="w-[150px]" alt="logo" />
         </div>
     </header>
     <section>
-        <div class="container border-1 border-red-500 mx-auto">
+        <div class="container mx-auto">
             <h1 class="text-white text-center py-8 lg:text-6xl md:text-4xl text-2xl font-bold">Find your next favorite
                 meal</h1>
-            <p class="text-gray-400 text-center lg:text-xl md:text-md text:xs">Search hundreds of recipes by name, ingredient, or cuisine.</p>
-            <input class="border border-1 border-gray-500 text-gray-400 items-center my-5 text-lg py-1 bg-#071540 rounded-md w-full" type="text" placeholder="Try pasta, spicy, breakfast...">
+            <p class="text-gray-400 text-center lg:text-xl md:text-md text:xs">Search hundreds of recipes by name,
+                ingredient, or cuisine.</p>
+            <div class="max-w-xl mx-auto mt-8">
+                <input
+                    class="border border-1 border-gray-500 text-gray-400 items-center p-5 py-2 text-lg py-1 bg-[#071540] rounded-lg w-full text-white"
+                    type="text" placeholder="Try pasta, spicy, breakfast...">
+            </div>
+            <div class="flex flex-wrap justify-center mt-5 gap-4">
+                <button class="px-4 py-2 bg-white text-black rounded-full text-sm font-medium hover:scale-110 transition">All</button>
+                <button class="px-4 py-2 border border-1 border-gray-500 text-white rounded-full text-sm font-medium hover:bg-blue-400 transition">Quick</button>
+                <button class="px-4 py-2 border border-1 border-gray-500 text-white rounded-full text-sm font-medium hover:bg-blue-400 transition">Vegetarian</button>
+                <button class="px-4 py-2 border border-1 border-gray-500 text-white rounded-full text-sm font-medium hover:bg-blue-400 transition">Healthy</button>
+                <button class="px-4 py-2 border border-1 border-gray-500 text-white rounded-full text-sm font-medium hover:bg-blue-400 transition">Dessert</button>
+                <button class="px-4 py-2 border border-1 border-gray-500 text-white rounded-full text-sm font-medium hover:bg-blue-400 transition">Spicy</button>
+            </div>
+            <div class="mt-10 max-w-7xl text-left mx-auto">
+                <p class="text-gray-500">8 Recipes</p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-6 gap-6">
+                <div class="bg-[#071540] border border-gray-700 rounded-xl overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition duration-500">
+                    <div class="overflow-hidden">
+                        <img src="assets/img/pasta.jpg" alt="pasta" class="w-full h-56 object-cover hover:scale-110 transition duration-500"/>
+                    </div>
+                    <div class="p-4">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-white font-semibold">Creamy Garlic Pasta</h3>
+                            <span class="bg-blue-600 text-xs px-2 py-1 rounded text-white">Easy</span>
+                        </div>
+                        <p class="text-gray-400 text-sm mt-2">Silky parmesan cream with roasted garlic</p>
+                        <div class="flex flex-wrap mt-4 gap-2">
+                            <span class="text-xs border border-gray-500 text-white px-2 py-1 rounded">Italian</span>
+                            <span class="text-xs border border-gray-500 text-white px-2 py-1 rounded">Vegetarian</span>
+                            <span class="text-xs border border-gray-500 text-white px-2 py-1 rounded">Pasta</span>
+                        </div>
+                        <div class="flex justify-between mt-5 text-gray-400 text-sm">
+                            <span><i class="fa-solid fa-clock"></i> 25 min</span>
+                            <span><i class="fa-solid fa-user-group"></i> 4</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-[#071540] border border-gray-600 rounded-xl overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition duration-400">
+                    <div class="overflow-hidden">
+                        <img src="assets/img/photo-1512621776951-a57141f2eefd.jpg" alt="bowl" class="w-full h-56 object-cover hover:scale-110 transition duration-500"/>
+                    </div>
+                    <div class="p-4">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-white font-semibold">Veg Buddha Bowl</h3>
+                            <span class="bg-red-500 text-xs px-2 py-1 rounded text-white">Healthy</span>
+                        </div>
+                        <p class="text-gray-400 text-sm mt-2">Fresh vegetables, quinoa, and creamy avocado.</p>
+                        <div class="flex flex-wrap mt-4 gap-2">
+                            <span class="text-xs border border-gray-500 text-white px-2 py-1 rounded">Healthy</span>
+                            <span class="text-xs border border-gray-500 text-white px-2 py-1 rounded">Vegetarian</span>
+                        </div>
+                        <div class="flex justify-between mt-5 text-gray-400 text-sm">
+                            <span><i class="fa-solid fa-clock"></i> 20 min</span>
+                            <span><i class="fa-solid fa-user-group"></i> 2</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-[#071540] border border-gray-600 rounded-xl overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition duration-400">
+                    <div class="overflow-hidden">
+                        <img src="assets/img/photo-1540189549336-e6e99c3679fe.jpg" alt="Pizza" class="w-full h-56 object-cover hover:scale-110 transition duration-500"/>
+                    </div>
+                    <div class="p-4">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-white font-semibold">Margherita Pizza</h3>
+                            <span class="bg-gray-600 text-xs px-2 py-1 rounded text-white">Medium</span>
+                        </div>
+                        <p class="text-gray-400 text-sm mt-2">Stone baked pizza topped with mozzarella and basil.</p>
+                        <div class="flex flex-wrap mt-4 gap-2">
+                            <span class="text-xs border border-gray-500 text-white px-2 py-1 rounded">Italian</span>
+                            <span class="text-xs border border-gray-500 text-white px-2 py-1 rounded">Vegetarian</span>
+                        </div>
+                        <div class="flex justify-between mt-5 text-gray-400 text-sm">
+                            <span><i class="fa-solid fa-clock"></i> 180 min</span>
+                            <span><i class="fa-solid fa-user-group"></i> 6</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-[#071540] border border-gray-600 rounded-xl overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition duration-400">
+                    <div class="overflow-hidden">
+                        <img src="assets/img/photo-1525351484163-7529414344d8.jpg" alt="toast" class="w-full h-56 object-cover hover:scale-110 transition duration-500"/>
+                    </div>
+                    <div class="p-4">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-white font-semibold">Avocado Toast</h3>
+                            <span class="bg-green-600 text-xs px-2 py-1 rounded text-white">Easy</span>
+                        </div>
+                        <p class="text-gray-400 text-sm mt-2">Crispy toast topped with smashed avocado and herbs.</p>
+                        <div class="flex flex-wrap mt-4 gap-2">
+                            <span class="text-xs border border-gray-500 text-white px-2 py-1 rounded">Breakfast</span>
+                            <span class="text-xs border border-gray-500 text-white px-2 py-1 rounded">Healthy</span>
+                        </div>
+                        <div class="flex justify-between mt-5 text-gray-400 text-sm">
+                            <span><i class="fa-solid fa-clock"></i> 10 min</span>
+                            <span><i class="fa-solid fa-user-group"></i> 1</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-[#071540] border border-gray-600 rounded-xl overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition duration-400">
+                    <div class="overflow-hidden">
+                        <img src="assets/img/photo-1512621776951-a57141f2eefd.jpg" alt="salad" class="w-full h-56 object-cover hover:scale-110 transition duration-500"/>
+                    </div>
+                    <div class="p-4">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-white font-semibold">Rainbow Salad Bowl</h3>
+                            <span class="bg-green-600 text-xs px-2 py-1 rounded text-white">Healthy</span>
+                        </div>
+                        <p class="text-gray-400 text-sm mt-2">Colorful vegetables served with a lemon dressing.</p>
+                        <div class="flex flex-wrap mt-4 gap-2">
+                            <span class="text-xs border border-gray-500 text-white px-2 py-1 rounded">Salad</span>
+                            <span class="text-xs border border-gray-500 text-white px-2 py-1 rounded">Healthy</span>
+                        </div>
+                        <div class="flex justify-between mt-5 text-gray-400 text-sm">
+                            <span><i class="fa-solid fa-clock"></i> 35 min</span>
+                            <span><i class="fa-solid fa-user-group"></i> 3</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-[#071540] border border-gray-600 rounded-xl overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition duration-400">
+                    <div class="overflow-hidden">
+                        <img src="assets/img/photo-1473093295043-cdd812d0e601.jpg" alt="salad" class="w-full h-56 object-cover hover:scale-110 transition duration-500"/>
+                    </div>
+                    <div class="p-4">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-white font-semibold">Vegetable Fried Rice</h3>
+                            <span class="bg-red-500 text-xs px-2 py-1 rounded text-white">Quick</span>
+                        </div>
+                        <p class="text-gray-400 text-sm mt-2">Stir-fried rice loaded with fresh vegetables.</p>
+                        <div class="flex flex-wrap mt-4 gap-2">
+                            <span class="text-xs border border-gray-500 text-white px-2 py-1 rounded">Asian</span>
+                            <span class="text-xs border border-gray-500 text-white px-2 py-1 rounded">Vegetarian</span>
+                        </div>
+                        <div class="flex justify-between mt-5 text-gray-400 text-sm">
+                            <span><i class="fa-solid fa-clock"></i> 240 min</span>
+                            <span><i class="fa-solid fa-user-group"></i> 4</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+    <footer class="bg-[#071540] border-t border-gray-700 mt-12">
+        <div class="max-w-7xl mx-auto px-4  py-6">
+        <p class="text-center text-gray-400 text-sm md:text-base">© 2026 WS Restaurant. All Rights Reserved.</p>
+        </div>
+    </footer>
 </body>
 
 </html>
