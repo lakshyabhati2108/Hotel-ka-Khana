@@ -12,7 +12,7 @@
 </body>
 <script>
 
-// H Making
+    // H Making
     // for (let i = 1; i <= 5; i++) {
     //     for (let j = 1; j <= 5; j++) {
     //         if (j == 1 || j == 5 || i == 3) {
@@ -24,7 +24,7 @@
     //     document.write("<br>")
     // }
 
-// Right Triangle
+    // Right Triangle
     // for(let i=1; i<=5; i++){
     //     for(let j=1; j<=i; j++){
     //         document.write("*")
@@ -32,7 +32,7 @@
     //     document.write("<br>")
     // }
 
- // Pyramid
+    // Pyramid
     // for (let r = 1; r <= 5; r++) {
     //     for (let s = 4; s >= r; s--) {
     //         document.write("&nbsp;&nbsp;")
@@ -71,7 +71,7 @@
     //     document.write("<br>")
     // }
 
-// Perfect Number
+    // Perfect Number
     // let num = parseInt(prompt("Enter Your Number: "))
 
     // let midValue = Math.ceil(num / 2)
@@ -91,7 +91,7 @@
     //     document.write(num, " is not a perfect number.")
     // }
 
-// Prime Number
+    // Prime Number
     // let num = parseInt(prompt("Enter the Number: "))
 
     // let midValue = Math.ceil(num/2)
@@ -117,7 +117,7 @@
     //     }
     // }
 
-// Sum of Numbers
+    // Sum of Numbers
     // let num = parseInt(prompt("Enter Your Number: "))
 
     // let total = 0
@@ -127,7 +127,7 @@
     // }
     // document.write(total)
 
-// Factorial
+    // Factorial
     // let num = parseInt(prompt("Enter Your Number: "))
 
     // let total = 1
@@ -137,7 +137,7 @@
     // }
     // document.write(total)
 
-// Even and Odd
+    // Even and Odd
     // let num = parseInt(prompt("Enter Your Number: "))
 
     //     if(num%2==0){
@@ -147,6 +147,53 @@
     //         document.write(num, " is an Odd Number.")
     //     }
     // document.write(total)
+
+    // 6-side Star
+    let size = 3;
+
+    for (let i = 1; i <= size; i++) {
+        let line = "";
+        for (let s = 0; s < 3 * size - i; s++) {
+            line += " ";
+        }
+        for (let st = 0; st < 2 * i - 1; st++) {
+            line += "*";
+        }
+        console.log(line)
+    }
+
+    for (let i = size; i >= 1; i--) {
+        let line = "";
+        for (let s = 0; s < size - i; s++) {
+            line += " ";
+        }
+        for (let st = 0; st < 4 * size + 2 * i - 1; st++) {
+            line += "*";
+        }
+        console.log(line);
+    }
+
+    for (let i = 2; i <= size; i++) {
+        let line = "";
+        for (let s = 0; s < size - i; s++) {
+            line += " ";
+        }
+        for (let st = 0; st < 4 * size + 2 * i - 1; st++) {
+            line += "*";
+        }
+        console.log(line);
+    }
+
+    for (let i = size; i >= 1; i--) {
+        let line = "";
+        for (let s = 0; s < 3 * size - i; s++) {
+            line += " ";
+        }
+        for (let st = 0; st < 2 * i - 1; st++) {
+            line += "*";
+        }
+        console.log(line);
+    }
 </script>
 
 </html>
