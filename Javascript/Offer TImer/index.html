@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offer Counter</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-fuchsia-900">
+    <div class="w-md bg-pink-500 border mx-auto mt-70 px-4 py-4 rounded-3xl font-inter">
+        <h1 class="text-center text-2xl">Special Offer</h1>
+        <div class="timerbox text-center py-4 text-6xl text-indigo-500">
+
+        </div>
+    </div>
+</body>
+<script>
+    let timerbox = document.querySelector(".timerbox");
+    let total_time = 3600;
+
+    let timer = setInterval(() => {
+
+        if(total_time<=0){
+            clearInterval(timer);
+            timerbox.innerHTML="Offer is Expired";
+            return;
+        }
+
+        let hours = Math.floor(total_time / 3600);
+
+        let minutes = Math.floor((total_time % 3600) / 60);
+
+        let seconds = total_time % 60;
+
+        total_time--
+
+        timerbox.innerHTML = hours + "h : " + minutes + "m : " + seconds + "s";
+    }, 1000)
+</script>
+
+</html>

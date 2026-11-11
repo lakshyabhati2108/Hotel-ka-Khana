@@ -29,6 +29,10 @@
     padding: 10px 0px;
 }
 
+.container-head div:nth-child(1) img{
+    max-width: 150px;
+}
+
 .head-btn {
     margin-right: 10px;
     gap: 10px;

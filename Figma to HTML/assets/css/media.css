@@ -81,7 +81,6 @@
     }
 
     .btn {
-        display: flex;
         align-items: center;
         text-align: center;
     }
@@ -128,7 +127,7 @@
     }
 
     .key-highlight h2 {
-        font-size: 30px;
+        font-size: 28px;
         line-height: 100%;
         font-weight: 700;
         padding: 25px 0px;
@@ -136,15 +135,20 @@
     }
 
     .key-highlight p {
-        font-size: 16px;
+        font-size: 14px;
+        line-height: 24px;
     }
 
     .cards {
-        width: 100%;
+        width: 380px;
+        align-items: center;
+        text-align: center; 
     }
 
     .key-cards {
         display: block;
+        align-items: center;
+        text-align: center;
     }
 
     .cards div:first-child img {
