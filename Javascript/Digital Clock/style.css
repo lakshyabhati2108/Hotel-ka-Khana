@@ -1,0 +1,49 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Barlow Condensed", sans-serif;
+}
+
+body{
+    background-color: rgb(74, 55, 69);
+}
+
+.container{
+    width: 600px;
+    margin: auto;
+}
+
+.time{
+    text-align: center;
+    width: 600px;
+    height: 300px;
+    margin-top: 200px;
+    background: rgb(119, 3, 37);
+    border-radius: 25px;
+    box-shadow: 0px 0px 20px rgba(226, 23, 128, 0.855);
+}
+
+.time p:nth-child(1){
+    font-size: 17px;
+    padding: 35px 0px 20px 0px;
+    color: aliceblue;
+}
+
+.time span{
+    font-size: 90px;
+    color: rgba(209, 8, 235, 0.855);
+    padding: 20px 0px 30px 0px;
+    margin: 20px 0px 30px 0px;
+}
+
+#period{
+    font-size: 18px;
+}
+
+#date, #month, #year{
+    font-size: 22px;
+    color: rgb(209, 8, 235, 0.855);
+    padding: 16px 0px;
+    display: flex;
+}

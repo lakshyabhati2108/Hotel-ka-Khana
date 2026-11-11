@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+
+        .box {
+            margin: auto;
+            line-height: 50px;
+            box-shadow: 0px 0px 10px #ccc;
+            border-radius: 15px;
+            max-width: 350px;
+            text-align: center;
+            margin-top: 150px;
+            background: #FFFFFF;
+        }
+
+        h2 {
+            font-size: 36px;
+            padding: 15px 0px;
+        }
+
+        .colourpreview {
+            max-width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            box-shadow: 0px 0px 10px #000;
+            margin: auto;
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+
+        button {
+            padding: 15px 40px;
+            border-radius: 20px;
+            background: white;
+            font-size: 18px;
+            margin-bottom: 20px;
+            transition: 1s ease;
+        }
+
+        button:hover {
+            background: violet;
+
+        }
+
+        #message {
+            color: rgb(5, 192, 5);
+        }
+    </style>
+</head>
+
+<body style="background: #F4F4F4;">
+    <div class="box">
+        <h2>Colour Picker</h2>
+
+        <div class="colourpreview"></div>
+
+        <input type="color" id="colourpicker" value="#ccc">
+
+        <p id="preview"></p>
+
+        <div>
+            <button onclick="copyColour()">Copy Colour Code👌</button>
+        </div>
+
+        <p id="message"></p>
+    </div>
+</body>
+<script>
+    let colourpicker = document.getElementById('colourpicker');
+    let preview = document.getElementById('preview');
+    let message = document.getElementById('message');
+    let colourpreview = document.querySelector('.colourpreview')
+    let body = document.querySelector('body');
+
+    colourpicker.addEventListener('input', function () {
+        let colour = this.value
+
+        colourpreview.style.background = colour;
+
+        body.style.background = colour;
+        
+        preview.innerHTML = colour.toUppercase();
+
+        message.innerHTML = "";
+    })
+
+    function copyColour(){
+        navigator.clipboard.writeText(preview.innerHTML);
+
+        message.innerHTML = "Colour Code Copied🤣"
+    }
+</script>
+
+</html>

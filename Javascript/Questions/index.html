@@ -11,15 +11,17 @@
 
 </body>
 <script>
-    let speed = parseInt(prompt("Enter the Speed: "));
+    let speed = parseFloat(prompt("Enter the Speed: "));
 
-    let dist = parseInt(prompt("Enter the Distance: "));
+    let dist = parseFloat(prompt("Enter the Distance: "));
 
-    let time = 0;
+    let extra_time = parseFloat(prompt("Enter the Extra Time Taken: "))
 
-    if (dist / speed= time){
-        
-    }
+    let time = parseFloat((dist / speed).toFixed(2));
+
+    let total_time = time + extra_time;
+
+    console.log("Total Time Taken:", total_time);
 </script>
 
 </html>
